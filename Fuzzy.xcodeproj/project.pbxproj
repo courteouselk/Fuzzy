@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1C82721DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C82711DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift */; };
+		BA1C82731DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C82711DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift */; };
+		BA1C82741DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C82711DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift */; };
+		BA1C82751DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C82711DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift */; };
 		BA396A1B1DCBC1DD00370153 /* Fuzzy-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BA396A191DCBC1DD00370153 /* Fuzzy-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA396A2D1DCBD66B00370153 /* Fuzzy-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BA396A2B1DCBD66B00370153 /* Fuzzy-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA396A3A1DCBD85000370153 /* Fuzzy-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BA396A381DCBD85000370153 /* Fuzzy-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8A8FB61DCBDA1100C9F545 /* Fuzzy-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8A8FB41DCBDA1100C9F545 /* Fuzzy-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA8A8FBB1DCBDD7500C9F545 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FBA1DCBDD7500C9F545 /* Dictionary.swift */; };
+		BA8A8FBC1DCBDD7500C9F545 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FBA1DCBDD7500C9F545 /* Dictionary.swift */; };
+		BA8A8FBD1DCBDD7500C9F545 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FBA1DCBDD7500C9F545 /* Dictionary.swift */; };
+		BA8A8FBE1DCBDD7500C9F545 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FBA1DCBDD7500C9F545 /* Dictionary.swift */; };
+		BA8A8FC11DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FC01DCBDDC500C9F545 /* Fuzzyfier.swift */; };
+		BA8A8FC21DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FC01DCBDDC500C9F545 /* Fuzzyfier.swift */; };
+		BA8A8FC31DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FC01DCBDDC500C9F545 /* Fuzzyfier.swift */; };
+		BA8A8FC41DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FC01DCBDDC500C9F545 /* Fuzzyfier.swift */; };
+		BA8A8FCB1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FCA1DCBF38200C9F545 /* BaseLinguisticVariable.swift */; };
+		BA8A8FCC1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FCA1DCBF38200C9F545 /* BaseLinguisticVariable.swift */; };
+		BA8A8FCD1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FCA1DCBF38200C9F545 /* BaseLinguisticVariable.swift */; };
+		BA8A8FCE1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FCA1DCBF38200C9F545 /* BaseLinguisticVariable.swift */; };
+		BA8A8FD11DCC077900C9F545 /* LinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD01DCC077900C9F545 /* LinguisticVariable.swift */; };
+		BA8A8FD21DCC077900C9F545 /* LinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD01DCC077900C9F545 /* LinguisticVariable.swift */; };
+		BA8A8FD31DCC077900C9F545 /* LinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD01DCC077900C9F545 /* LinguisticVariable.swift */; };
+		BA8A8FD41DCC077900C9F545 /* LinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD01DCC077900C9F545 /* LinguisticVariable.swift */; };
+		BA8A8FD61DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD51DCC0FA500C9F545 /* HedgeLinguisticVariable.swift */; };
+		BA8A8FD71DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD51DCC0FA500C9F545 /* HedgeLinguisticVariable.swift */; };
+		BA8A8FD81DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD51DCC0FA500C9F545 /* HedgeLinguisticVariable.swift */; };
+		BA8A8FD91DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD51DCC0FA500C9F545 /* HedgeLinguisticVariable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1C82711DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzifyer+MembershipFunctions.swift"; sourceTree = "<group>"; };
 		BA396A161DCBC1DD00370153 /* Fuzzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fuzzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA396A191DCBC1DD00370153 /* Fuzzy-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fuzzy-macOS.h"; sourceTree = "<group>"; };
 		BA396A1A1DCBC1DD00370153 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
@@ -26,6 +51,11 @@
 		BA8A8FB21DCBDA1100C9F545 /* Fuzzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fuzzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8A8FB41DCBDA1100C9F545 /* Fuzzy-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fuzzy-watchOS.h"; sourceTree = "<group>"; };
 		BA8A8FB51DCBDA1100C9F545 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
+		BA8A8FBA1DCBDD7500C9F545 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		BA8A8FC01DCBDDC500C9F545 /* Fuzzyfier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzyfier.swift; sourceTree = "<group>"; };
+		BA8A8FCA1DCBF38200C9F545 /* BaseLinguisticVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLinguisticVariable.swift; sourceTree = "<group>"; };
+		BA8A8FD01DCC077900C9F545 /* LinguisticVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinguisticVariable.swift; sourceTree = "<group>"; };
+		BA8A8FD51DCC0FA500C9F545 /* HedgeLinguisticVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HedgeLinguisticVariable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA1C82701DCCFC19003871A6 /* Fuzzifyer */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A8FC01DCBDDC500C9F545 /* Fuzzyfier.swift */,
+				BA1C82711DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift */,
+			);
+			name = Fuzzifyer;
+			sourceTree = "<group>";
+		};
 		BA396A0C1DCBC1DD00370153 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +123,9 @@
 		BA396A211DCBC2F100370153 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BA8A8FBA1DCBDD7500C9F545 /* Dictionary.swift */,
+				BA8A8FCF1DCC074900C9F545 /* Linguistic Variables */,
+				BA1C82701DCCFC19003871A6 /* Fuzzifyer */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -109,6 +151,16 @@
 			);
 			name = Headers;
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		BA8A8FCF1DCC074900C9F545 /* Linguistic Variables */ = {
+			isa = PBXGroup;
+			children = (
+				BA8A8FD01DCC077900C9F545 /* LinguisticVariable.swift */,
+				BA8A8FCA1DCBF38200C9F545 /* BaseLinguisticVariable.swift */,
+				BA8A8FD51DCC0FA500C9F545 /* HedgeLinguisticVariable.swift */,
+			);
+			name = "Linguistic Variables";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,18 +284,22 @@
 				TargetAttributes = {
 					BA396A151DCBC1DD00370153 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
 					};
 					BA396A281DCBD66A00370153 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
 					};
 					BA396A351DCBD85000370153 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
 					};
 					BA8A8FB11DCBDA1100C9F545 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -304,6 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1C82721DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */,
+				BA8A8FD11DCC077900C9F545 /* LinguisticVariable.swift in Sources */,
+				BA8A8FD61DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */,
+				BA8A8FCB1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */,
+				BA8A8FC11DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */,
+				BA8A8FBB1DCBDD7500C9F545 /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1C82731DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */,
+				BA8A8FD21DCC077900C9F545 /* LinguisticVariable.swift in Sources */,
+				BA8A8FD71DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */,
+				BA8A8FCC1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */,
+				BA8A8FC21DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */,
+				BA8A8FBC1DCBDD7500C9F545 /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1C82741DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */,
+				BA8A8FD31DCC077900C9F545 /* LinguisticVariable.swift in Sources */,
+				BA8A8FD81DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */,
+				BA8A8FCD1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */,
+				BA8A8FC31DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */,
+				BA8A8FBD1DCBDD7500C9F545 /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1C82751DCCFF18003871A6 /* Fuzzifyer+MembershipFunctions.swift in Sources */,
+				BA8A8FD41DCC077900C9F545 /* LinguisticVariable.swift in Sources */,
+				BA8A8FD91DCC0FA500C9F545 /* HedgeLinguisticVariable.swift in Sources */,
+				BA8A8FCE1DCBF38200C9F545 /* BaseLinguisticVariable.swift in Sources */,
+				BA8A8FC41DCBDDC500C9F545 /* Fuzzyfier.swift in Sources */,
+				BA8A8FBE1DCBDD7500C9F545 /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +505,7 @@
 		BA396A1F1DCBC1DD00370153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -439,6 +520,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -446,6 +528,7 @@
 		BA396A201DCBC1DD00370153 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -467,6 +550,7 @@
 		BA396A2F1DCBD66B00370153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -480,6 +564,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
@@ -489,6 +574,7 @@
 		BA396A301DCBD66B00370153 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -511,6 +597,7 @@
 		BA396A3C1DCBD85000370153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -522,6 +609,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -532,6 +620,7 @@
 		BA396A3D1DCBD85000370153 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -554,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -565,6 +655,7 @@
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALID_ARCHS = "armv7k x86_64";
@@ -576,6 +667,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -640,6 +732,7 @@
 				BA8A8FB91DCBDA1100C9F545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
