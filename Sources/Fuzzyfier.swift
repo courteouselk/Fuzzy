@@ -33,17 +33,16 @@ open class Fuzzifier {
         }
     }
 
-    /// Fuzzifies a given crisp input into a dictionary of linguistic variable names and their 
+    /// Fuzzifies a given crisp input into a dictionary of linguistic variable names and their
     /// corresponding degrees of membership.
     ///
     /// - parameter crisp: An input value.
 
-    final public func fuzzify(_ crisp: Double) -> [String: Double] {
-        return membershipFunctions.map { degreeOfMembership in
-            let result = degreeOfMembership(crisp)
-            assert(result >= 0 && result <= 1, "membership function output must be always be in [0..1] interval")
-            return result
-        }
+    final public func fuzzify(_ crisp: Double) -> FuzzyVaue {
+        return FuzzyVaue(
+            fuzzifier: self,
+            degreesOfMembership: membershipFunctions.map { $0(crisp) }
+        )
     }
 
 }

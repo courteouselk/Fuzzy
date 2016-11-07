@@ -1,32 +1,55 @@
 //
-//  LinguisticVariable.swift
+//  BaseLinguisticVariable.swift
 //  Fuzzy
 //
-//  Created by Anton Bronnikov on 04/11/2016.
+//  Created by Anton Bronnikov on 03/11/2016.
 //  Copyright © 2016 Anton Bronnikov. All rights reserved.
 //
 
-public protocol LinguisticVariable {
+/// Basic (adjective) linguistic variable.
+
+public struct LinguisticVariable {
 
     /// Fuzzy set membership function.
     ///
-    /// - parameter crisp: An input (crisp) value.
+    /// Determines the degree of membership for a specific crisp value in the fuzzy set
+    /// corresponding to `self`.
     ///
-    /// - important: Membership function must _always_ return a value within [0..1] range.
+    /// Membership function must _always_ return a value within [0..1] range.
+    ///
+    /// - parameter crisp: An input (crisp) value.
     ///
     /// - returns: Input value's degree of membership in linguistic variable's fuzzy set.
 
-    typealias MembershipFunction = (_ crisp: Double) -> Double
+    public typealias MembershipFunction = (_ crisp: Double) -> Double
 
-    /// The name (typically adjective) that describes `self`.
+    /// A name (linguistic collocation) describing `self`.
     ///
-    /// For example: "good", "fair", "high", "insufficient", etc.
+    /// For example: "good", "fair", "very high", "not insufficient", etc.
 
-    var name: String { get }
+    public let name: String
 
-    /// A function that determines the degree of membership of a specific crisp value in the fuzzy
-    /// set of `self`
+    /// Membership function.
+    ///
+    /// Determines the degree of membership for a specific crisp value in the fuzzy set 
+    /// corresponding to `self`.
+    ///
+    /// - seealso: [Membership function](https://en.wikipedia.org/wiki/Membership_function_(mathematics))
 
-    var membershipFunction: MembershipFunction { get }
+    public let membershipFunction: MembershipFunction
+
+    /// Creates a new linguistic variable using a free-style membership function.
+    ///
+    /// - parameters:
+    ///   - name:               A name for the new linguistic vaiable (typically an adjective, e.g.
+    ///                         "adequate", "good", "generous", etc).
+    ///   - membershipFunction: Function (closure) that determines the degree of membership for a 
+    ///                         specific input (crisp) value in the fuzzy set of `self`.  Must 
+    ///                         _always_ return a value within the [0..1] range.
+
+    public init(name: String, membershipFunction: @escaping MembershipFunction) {
+        self.name = name
+        self.membershipFunction = membershipFunction
+    }
 
 }
