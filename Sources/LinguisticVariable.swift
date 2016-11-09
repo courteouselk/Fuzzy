@@ -1,5 +1,5 @@
 //
-//  BaseLinguisticVariable.swift
+//  LinguisticVariable.swift
 //  Fuzzy
 //
 //  Created by Anton Bronnikov on 03/11/2016.
@@ -10,16 +10,14 @@
 
 public struct LinguisticVariable {
 
-    /// Fuzzy set membership function.
+    /// Membership function.
     ///
-    /// Determines the degree of membership for a specific crisp value in the fuzzy set
-    /// corresponding to `self`.
+    /// Determines the degree of membership of an input crisp value in the fuzzy set that is
+    /// represented by `self`.
     ///
     /// Membership function must _always_ return a value within [0..1] range.
     ///
-    /// - parameter crisp: An input (crisp) value.
-    ///
-    /// - returns: Input value's degree of membership in linguistic variable's fuzzy set.
+    /// - parameter crisp: Input crisp value.
 
     public typealias MembershipFunction = (_ crisp: Double) -> Double
 
@@ -36,20 +34,26 @@ public struct LinguisticVariable {
     ///
     /// - seealso: [Membership function](https://en.wikipedia.org/wiki/Membership_function_(mathematics))
 
-    public let membershipFunction: MembershipFunction
+    public func fuzzify(_ crisp: Double) -> Fuzzy {
+        return Fuzzy(membershipFunction(crisp))
+    }
 
     /// Creates a new linguistic variable using a free-style membership function.
     ///
     /// - parameters:
-    ///   - name:               A name for the new linguistic vaiable (typically an adjective, e.g.
-    ///                         "adequate", "good", "generous", etc).
-    ///   - membershipFunction: Function (closure) that determines the degree of membership for a 
-    ///                         specific input (crisp) value in the fuzzy set of `self`.  Must 
-    ///                         _always_ return a value within the [0..1] range.
+    ///   - name:     A name for the new linguistic vaiable (typically an adjective, e.g.
+    ///               "adequate", "good", "generous", etc).
+    ///   - function: Function (closure) that determines the degree of membership for a
+    ///               specific input (crisp) value in the fuzzy set of `self`.  Must
+    ///               _always_ return a value within the [0..1] range.
 
-    public init(name: String, membershipFunction: @escaping MembershipFunction) {
+    public init(name: String, function: @escaping (_ crisp: Double) -> Double) {
         self.name = name
-        self.membershipFunction = membershipFunction
+        membershipFunction = function
     }
+
+    // MARK: - Internal API
+
+    let membershipFunction: MembershipFunction
 
 }

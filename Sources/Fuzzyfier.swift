@@ -8,9 +8,11 @@
 
 open class Fuzzifier {
 
-    /// Fuzzifier's domain.
+    // MARK: - Public API
 
-    open var domain: String {
+    /// Discourse shared by all fuzzifier's linguistic variables.
+
+    open var discourse: String {
         return ""
     }
 
@@ -22,27 +24,34 @@ open class Fuzzifier {
         return []
     }
 
-    private var membershipFunctions: [String: LinguisticVariable.MembershipFunction] = [:]
+    /// Fuzzifies crisp input into a group of fuzzy values each representing the degree of 
+    /// membership of an input in the defined linguistic variables.
+    ///
+    /// - parameter crisp: An input value.
+
+    public final func fuzzify(_ crisp: Double) -> Fuzzification {
+        return Fuzzification(
+            fuzzifiers.lazy.map { name, fuzzify in
+                (name, fuzzify(crisp))
+            }
+        )
+    }
 
     /// Creates a new fuzzifier instance.
 
     public init() {
-        linguisticVariables.forEach { v in
-            assert(!membershipFunctions.keys.contains(v.name), "duplicate linguistic variable name \(v.name)")
-            membershipFunctions[v.name] = v.membershipFunction
+        for linguisticVariable in linguisticVariables {
+            assert(!fuzzifiers.keys.contains(linguisticVariable.name),
+                   "duplicate linguistic variable name \(linguisticVariable.name)")
+
+            fuzzifiers[linguisticVariable.name] = linguisticVariable.fuzzify
         }
     }
 
-    /// Fuzzifies a given crisp input into a dictionary of linguistic variable names and their
-    /// corresponding degrees of membership.
-    ///
-    /// - parameter crisp: An input value.
+    // MARK: - Internal API
 
-    final public func fuzzify(_ crisp: Double) -> FuzzyVaue {
-        return FuzzyVaue(
-            fuzzifier: self,
-            degreesOfMembership: membershipFunctions.map { $0(crisp) }
-        )
-    }
+    typealias FuzzifyingFunction = (_ crsip: Double) -> Fuzzy
+
+    internal private (set) var fuzzifiers: [String: FuzzifyingFunction] = [:]
 
 }

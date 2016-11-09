@@ -27,7 +27,7 @@ public extension LinguisticVariable {
         switch hedge {
         case .not:
             self.init(name: modifiedName) { crisp in
-                return (1 - base.membershipFunction(crisp))
+                return 1 - base.membershipFunction(crisp)
             }
 
         case .very:
