@@ -59,6 +59,14 @@
 		BA9397A11DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93979F1DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift */; };
 		BA9397A21DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93979F1DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift */; };
 		BA9397A31DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93979F1DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift */; };
+		BA9397A81DD45B46009A25FA /* Discourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397A71DD45B46009A25FA /* Discourse.swift */; };
+		BA9397A91DD45B46009A25FA /* Discourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397A71DD45B46009A25FA /* Discourse.swift */; };
+		BA9397AA1DD45B46009A25FA /* Discourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397A71DD45B46009A25FA /* Discourse.swift */; };
+		BA9397AB1DD45B46009A25FA /* Discourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397A71DD45B46009A25FA /* Discourse.swift */; };
+		BA9397AD1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */; };
+		BA9397AE1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */; };
+		BA9397AF1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */; };
+		BA9397B01DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */; };
 		BAB51C1D1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
 		BAB51C1E1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
 		BAB51C1F1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
@@ -94,6 +102,9 @@
 		BA9397951DD3C69F009A25FA /* Fuzzification+Expressible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzification+Expressible.swift"; sourceTree = "<group>"; };
 		BA93979A1DD3CB44009A25FA /* Fuzzification+Reflectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzification+Reflectable.swift"; sourceTree = "<group>"; };
 		BA93979F1DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzification+StringConvertible.swift"; sourceTree = "<group>"; };
+		BA9397A41DD45563009A25FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA9397A71DD45B46009A25FA /* Discourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discourse.swift; sourceTree = "<group>"; };
+		BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzification+Sequence.swift"; sourceTree = "<group>"; };
 		BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzy.swift; sourceTree = "<group>"; };
 		BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+Expressible.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +153,7 @@
 		BA396A0C1DCBC1DD00370153 = {
 			isa = PBXGroup;
 			children = (
+				BA9397A51DD45569009A25FA /* Documentation */,
 				BA396A221DCBD53000370153 /* Support */,
 				BA396A231DCBD5AF00370153 /* Headers */,
 				BA396A211DCBC2F100370153 /* Sources */,
@@ -166,6 +178,7 @@
 				BAD829BD1DCFA7840024710B /* Fuzzy */,
 				BA93978F1DD3C446009A25FA /* Fuzzification */,
 				BA8A8FCF1DCC074900C9F545 /* LinguisticVariable */,
+				BA9397A61DD45B33009A25FA /* Discourse */,
 				BA1C82701DCCFC19003871A6 /* Fuzzifyer */,
 			);
 			path = Sources;
@@ -211,8 +224,25 @@
 				BA9397951DD3C69F009A25FA /* Fuzzification+Expressible.swift */,
 				BA93979A1DD3CB44009A25FA /* Fuzzification+Reflectable.swift */,
 				BA93979F1DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift */,
+				BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */,
 			);
 			name = Fuzzification;
+			sourceTree = "<group>";
+		};
+		BA9397A51DD45569009A25FA /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				BA9397A41DD45563009A25FA /* README.md */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		BA9397A61DD45B33009A25FA /* Discourse */ = {
+			isa = PBXGroup;
+			children = (
+				BA9397A71DD45B46009A25FA /* Discourse.swift */,
+			);
+			name = Discourse;
 			sourceTree = "<group>";
 		};
 		BAD829BD1DCFA7840024710B /* Fuzzy */ = {
@@ -424,11 +454,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9397AD1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */,
 				BA1C82721DCCFF18003871A6 /* Fuzzyfier+MembershipFunctions.swift in Sources */,
 				BA9397961DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C82771DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A01DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397861DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
+				BA9397A81DD45B46009A25FA /* Discourse.swift in Sources */,
 				BA9397811DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C231DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397911DD3C459009A25FA /* Fuzzification.swift in Sources */,
@@ -445,11 +477,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9397AE1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */,
 				BA1C82731DCCFF18003871A6 /* Fuzzyfier+MembershipFunctions.swift in Sources */,
 				BA9397971DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C82781DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A11DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397871DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
+				BA9397A91DD45B46009A25FA /* Discourse.swift in Sources */,
 				BA9397821DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C241DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397921DD3C459009A25FA /* Fuzzification.swift in Sources */,
@@ -466,11 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9397AF1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */,
 				BA1C82741DCCFF18003871A6 /* Fuzzyfier+MembershipFunctions.swift in Sources */,
 				BA9397981DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C82791DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A21DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397881DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
+				BA9397AA1DD45B46009A25FA /* Discourse.swift in Sources */,
 				BA9397831DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C251DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397931DD3C459009A25FA /* Fuzzification.swift in Sources */,
@@ -487,11 +523,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9397B01DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */,
 				BA1C82751DCCFF18003871A6 /* Fuzzyfier+MembershipFunctions.swift in Sources */,
 				BA9397991DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C827A1DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A31DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397891DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
+				BA9397AB1DD45B46009A25FA /* Discourse.swift in Sources */,
 				BA9397841DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C261DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397941DD3C459009A25FA /* Fuzzification.swift in Sources */,

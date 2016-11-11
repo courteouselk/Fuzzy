@@ -18,8 +18,7 @@ public struct Fuzzification {
         fuzzification = Dictionary(minimumCapacity: sequence.underestimatedCount)
 
         for (name, fuzzy) in sequence {
-            assert(!fuzzification.keys.contains(name),
-                   "duplicate linguistic variable \(name)")
+            assert(!fuzzification.keys.contains(name), "duplicate linguistic variable \(name)")
 
             fuzzification[name] = fuzzy
         }
@@ -29,8 +28,7 @@ public struct Fuzzification {
         fuzzification = Dictionary(minimumCapacity: sequence.underestimatedCount)
 
         for (variable, fuzzy) in sequence {
-            assert(!fuzzification.keys.contains(variable.name),
-                   "duplicate linguistic variable \(variable.name)")
+            assert(!fuzzification.keys.contains(variable.name), "duplicate linguistic variable \(variable.name)")
 
             fuzzification[variable.name] = fuzzy
         }

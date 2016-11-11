@@ -10,6 +10,9 @@
 
 public struct Fuzzy {
 
+    public static let `false` = Fuzzy(0)
+    public static let `true` = Fuzzy(1)
+
     let degreeOfMembership: Double
 
     init(_ degreeOfMembership: Double) {
