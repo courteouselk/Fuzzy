@@ -10,22 +10,29 @@ by Michael Negnevitsky.
 
 ### Fuzzifiers
 
-First we need some basic bricks, called fuzzifiers.  We need both, those that fuzzify crisp inputs to be fed into fuzzy inference rules, and the one that will defuzzify a result into crisp output.
+First we need some basic bricks, called fuzzifiers.  We need both, those that fuzzify crisp inputs 
+into the fuzzy values (to be fed to the inference rules), and those that defuzzify inferred 
+fuzzy result(s) into the crisp output.
 
 ````swift
 import Fuzzy
 
 public class Funding: Fuzzifier {
 
-    private let _discourse = Discourse(name: "funding", min: 0, max: 100)
+    // Discourse gives some idea about what does this fuzzifier represent, and indicates its 
+    // valid values range. 
 
-    public override var discourse: Discourse {
-        return _discourse
-    }
+    private let _discourse = Discourse(name: "funding", min: 0, max: 100)
+    public override var discourse: Discourse { return _discourse }
+
+    // Linguistic variables describe how each particular crisp value maps onto fuzzy sets described
+    // in the human language.
 
     public override var linguisticVariables: [LinguisticVariable] {
         return [Funding.inadequate, Funding.marginal, Funding.adequate]
     }
+
+    // Here go individual linguistic variable definitions
 
     public static let inadequate = LinguisticVariable(
         name: "inadequate",
@@ -43,14 +50,15 @@ public class Funding: Fuzzifier {
     )
 
 }
+````
 
+The rest of fuzzifiers are defined similarly.
+
+````swift
 public class Staffing: Fuzzifier {
 
     private let _discourse = Discourse(name: "staffing", min: 0, max: 100)
-
-    public override var discourse: Discourse {
-        return _discourse
-    }
+    public override var discourse: Discourse { return _discourse }
 
     public override var linguisticVariables: [LinguisticVariable] {
         return [Staffing.small, Staffing.large]
@@ -71,10 +79,7 @@ public class Staffing: Fuzzifier {
 public class Risk: Fuzzifier {
 
     private let _discourse = Discourse(name: "risk", min: 0, max: 100)
-
-    public override var discourse: Discourse {
-        return _discourse
-    }
+    public override var discourse: Discourse { return _discourse }
 
     public override var linguisticVariables: [LinguisticVariable] {
         return [Risk.low, Risk.normal, Risk.high]
@@ -100,7 +105,7 @@ public class Risk: Fuzzifier {
 
 ### Inferer
 
-Second thing is an inferer that puts everything together.
+Second thing to do is to declare an inferer that glues fuzzifiers together.
 
 ````swift
 public struct RiskInferer {
@@ -110,18 +115,22 @@ public struct RiskInferer {
     private let riskFuzzifier = Risk()
 
     public func infer(funding crispFunding: Double, staffing crispStaffing: Double) -> Double {
-        // Fuzzify crisp inputs 
+
+        // Fuzzify crisp inputs
+
         let funding = fundingFuzzifier.fuzzify(crispFunding)
         let staffing = staffingFuzzifier.fuzzify(crispStaffing)
 
         // Here come the fuzzy inference rules
+
         let risk: Fuzzification = [
-            Risk.low    : funding[Funding.adequate] || staffing[Staffing.small],
-            Risk.normal : funding[Funding.marginal] && staffing[Staffing.large],
+            Risk.low    : funding[Funding.adequate] || staffing[Staffing.small], // You can use traditional
+            Risk.normal : funding[Funding.marginal] && staffing[Staffing.large], // logical operators
             Risk.high   : funding[Funding.inadequate]
         ]
 
         // Defuzzify inferred result into crisp output
+
         return riskFuzzifier.defuzzify(risk, aggregationSlices: 10)
     }
 
@@ -130,7 +139,7 @@ public struct RiskInferer {
 
 ### Usage
 
-Finally, some practical use.
+And that's it!  You can use it now.
 
 ````swift
 let riskInferer = RiskInferer()
