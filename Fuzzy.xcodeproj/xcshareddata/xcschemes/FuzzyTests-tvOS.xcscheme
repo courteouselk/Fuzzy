@@ -5,22 +5,6 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA396A351DCBD85000370153"
-               BuildableName = "Fuzzy.framework"
-               BlueprintName = "Fuzzy-tvOS"
-               ReferencedContainer = "container:Fuzzy.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -34,21 +18,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BAA610261DD8F52700E93F10"
-               BuildableName = "FuzzyTests.xctest"
+               BuildableName = "FuzzyTests-tvOS.xctest"
                BlueprintName = "FuzzyTests-tvOS"
                ReferencedContainer = "container:Fuzzy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA396A351DCBD85000370153"
-            BuildableName = "Fuzzy.framework"
-            BlueprintName = "Fuzzy-tvOS"
-            ReferencedContainer = "container:Fuzzy.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -62,15 +37,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA396A351DCBD85000370153"
-            BuildableName = "Fuzzy.framework"
-            BlueprintName = "Fuzzy-tvOS"
-            ReferencedContainer = "container:Fuzzy.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,15 +46,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA396A351DCBD85000370153"
-            BuildableName = "Fuzzy.framework"
-            BlueprintName = "Fuzzy-tvOS"
-            ReferencedContainer = "container:Fuzzy.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

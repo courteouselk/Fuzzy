@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA396A351DCBD85000370153"
+               BlueprintIdentifier = "BA396A151DCBC1DD00370153"
                BuildableName = "Fuzzy.framework"
-               BlueprintName = "Fuzzy-tvOS"
+               BlueprintName = "Fuzzy-macOS"
                ReferencedContainer = "container:Fuzzy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAA610261DD8F52700E93F10"
+               BlueprintIdentifier = "BAA610081DD8F50500E93F10"
                BuildableName = "FuzzyTests.xctest"
-               BlueprintName = "FuzzyTests-tvOS"
+               BlueprintName = "FuzzyTests-macOS"
                ReferencedContainer = "container:Fuzzy.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA396A351DCBD85000370153"
+            BlueprintIdentifier = "BA396A151DCBC1DD00370153"
             BuildableName = "Fuzzy.framework"
-            BlueprintName = "Fuzzy-tvOS"
+            BlueprintName = "Fuzzy-macOS"
             ReferencedContainer = "container:Fuzzy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA396A351DCBD85000370153"
+            BlueprintIdentifier = "BA396A151DCBC1DD00370153"
             BuildableName = "Fuzzy.framework"
-            BlueprintName = "Fuzzy-tvOS"
+            BlueprintName = "Fuzzy-macOS"
             ReferencedContainer = "container:Fuzzy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA396A351DCBD85000370153"
+            BlueprintIdentifier = "BA396A151DCBC1DD00370153"
             BuildableName = "Fuzzy.framework"
-            BlueprintName = "Fuzzy-tvOS"
+            BlueprintName = "Fuzzy-macOS"
             ReferencedContainer = "container:Fuzzy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

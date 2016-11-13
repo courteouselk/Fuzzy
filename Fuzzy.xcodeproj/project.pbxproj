@@ -67,6 +67,12 @@
 		BA9397AE1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */; };
 		BA9397AF1DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */; };
 		BA9397B01DD53BE6009A25FA /* Fuzzification+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */; };
+		BAA6100E1DD8F50500E93F10 /* Fuzzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA396A161DCBC1DD00370153 /* Fuzzy.framework */; };
+		BAA6101D1DD8F51500E93F10 /* Fuzzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA396A291DCBD66A00370153 /* Fuzzy.framework */; };
+		BAA6102C1DD8F52700E93F10 /* Fuzzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA396A361DCBD85000370153 /* Fuzzy.framework */; };
+		BAA610351DD8F55A00E93F10 /* InfererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA610331DD8F55300E93F10 /* InfererTests.swift */; };
+		BAA610361DD8F55A00E93F10 /* InfererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA610331DD8F55300E93F10 /* InfererTests.swift */; };
+		BAA610371DD8F55B00E93F10 /* InfererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA610331DD8F55300E93F10 /* InfererTests.swift */; };
 		BAB51C1D1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
 		BAB51C1E1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
 		BAB51C1F1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
@@ -76,6 +82,30 @@
 		BAB51C251DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */; };
 		BAB51C261DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAA6100F1DD8F50500E93F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA396A0D1DCBC1DD00370153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA396A151DCBC1DD00370153;
+			remoteInfo = "Fuzzy-macOS";
+		};
+		BAA6101E1DD8F51500E93F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA396A0D1DCBC1DD00370153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA396A281DCBD66A00370153;
+			remoteInfo = "Fuzzy-iOS";
+		};
+		BAA6102D1DD8F52700E93F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA396A0D1DCBC1DD00370153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA396A351DCBD85000370153;
+			remoteInfo = "Fuzzy-tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BA1C82711DCCFF18003871A6 /* Fuzzyfier+MembershipFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzyfier+MembershipFunctions.swift"; sourceTree = "<group>"; };
@@ -105,6 +135,13 @@
 		BA9397A41DD45563009A25FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BA9397A71DD45B46009A25FA /* Discourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discourse.swift; sourceTree = "<group>"; };
 		BA9397AC1DD53BE6009A25FA /* Fuzzification+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzification+Sequence.swift"; sourceTree = "<group>"; };
+		BAA610091DD8F50500E93F10 /* FuzzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA6100D1DD8F50500E93F10 /* InfoTests-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoTests-macOS.plist"; sourceTree = "<group>"; };
+		BAA610181DD8F51500E93F10 /* FuzzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA6101C1DD8F51500E93F10 /* InfoTests-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoTests-iOS.plist"; sourceTree = "<group>"; };
+		BAA610271DD8F52700E93F10 /* FuzzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA6102B1DD8F52700E93F10 /* InfoTests-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoTests-tvOS.plist"; sourceTree = "<group>"; };
+		BAA610331DD8F55300E93F10 /* InfererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfererTests.swift; path = Tests/InfererTests.swift; sourceTree = "<group>"; };
 		BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzy.swift; sourceTree = "<group>"; };
 		BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+Expressible.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +175,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAA610061DD8F50500E93F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA6100E1DD8F50500E93F10 /* Fuzzy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA610151DD8F51500E93F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA6101D1DD8F51500E93F10 /* Fuzzy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA610241DD8F52700E93F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA6102C1DD8F52700E93F10 /* Fuzzy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -157,6 +218,7 @@
 				BA396A221DCBD53000370153 /* Support */,
 				BA396A231DCBD5AF00370153 /* Headers */,
 				BA396A211DCBC2F100370153 /* Sources */,
+				BAA610321DD8F54100E93F10 /* Tests */,
 				BA396A171DCBC1DD00370153 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,6 +230,9 @@
 				BA396A291DCBD66A00370153 /* Fuzzy.framework */,
 				BA396A361DCBD85000370153 /* Fuzzy.framework */,
 				BA8A8FB21DCBDA1100C9F545 /* Fuzzy.framework */,
+				BAA610091DD8F50500E93F10 /* FuzzyTests.xctest */,
+				BAA610181DD8F51500E93F10 /* FuzzyTests.xctest */,
+				BAA610271DD8F52700E93F10 /* FuzzyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +256,9 @@
 				BA396A2C1DCBD66B00370153 /* Info-iOS.plist */,
 				BA396A391DCBD85000370153 /* Info-tvOS.plist */,
 				BA8A8FB51DCBDA1100C9F545 /* Info-watchOS.plist */,
+				BAA6100D1DD8F50500E93F10 /* InfoTests-macOS.plist */,
+				BAA6101C1DD8F51500E93F10 /* InfoTests-iOS.plist */,
+				BAA6102B1DD8F52700E93F10 /* InfoTests-tvOS.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -243,6 +311,14 @@
 				BA9397A71DD45B46009A25FA /* Discourse.swift */,
 			);
 			name = Discourse;
+			sourceTree = "<group>";
+		};
+		BAA610321DD8F54100E93F10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA610331DD8F55300E93F10 /* InfererTests.swift */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		BAD829BD1DCFA7840024710B /* Fuzzy */ = {
@@ -367,12 +443,67 @@
 			productReference = BA8A8FB21DCBDA1100C9F545 /* Fuzzy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BAA610081DD8F50500E93F10 /* FuzzyTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA610131DD8F50500E93F10 /* Build configuration list for PBXNativeTarget "FuzzyTests-macOS" */;
+			buildPhases = (
+				BAA610051DD8F50500E93F10 /* Sources */,
+				BAA610061DD8F50500E93F10 /* Frameworks */,
+				BAA610071DD8F50500E93F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA610101DD8F50500E93F10 /* PBXTargetDependency */,
+			);
+			name = "FuzzyTests-macOS";
+			productName = "FuzzyTests-macOS";
+			productReference = BAA610091DD8F50500E93F10 /* FuzzyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAA610171DD8F51500E93F10 /* FuzzyTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA610201DD8F51500E93F10 /* Build configuration list for PBXNativeTarget "FuzzyTests-iOS" */;
+			buildPhases = (
+				BAA610141DD8F51500E93F10 /* Sources */,
+				BAA610151DD8F51500E93F10 /* Frameworks */,
+				BAA610161DD8F51500E93F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA6101F1DD8F51500E93F10 /* PBXTargetDependency */,
+			);
+			name = "FuzzyTests-iOS";
+			productName = "FuzzyTests-iOS";
+			productReference = BAA610181DD8F51500E93F10 /* FuzzyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAA610261DD8F52700E93F10 /* FuzzyTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA6102F1DD8F52700E93F10 /* Build configuration list for PBXNativeTarget "FuzzyTests-tvOS" */;
+			buildPhases = (
+				BAA610231DD8F52700E93F10 /* Sources */,
+				BAA610241DD8F52700E93F10 /* Frameworks */,
+				BAA610251DD8F52700E93F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAA6102E1DD8F52700E93F10 /* PBXTargetDependency */,
+			);
+			name = "FuzzyTests-tvOS";
+			productName = "FuzzyTests-tvOS";
+			productReference = BAA610271DD8F52700E93F10 /* FuzzyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BA396A0D1DCBC1DD00370153 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Anton Bronnikov";
 				TargetAttributes = {
@@ -396,6 +527,18 @@
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Manual;
 					};
+					BAA610081DD8F50500E93F10 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					BAA610171DD8F51500E93F10 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					BAA610261DD8F52700E93F10 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = BA396A101DCBC1DD00370153 /* Build configuration list for PBXProject "Fuzzy" */;
@@ -414,6 +557,9 @@
 				BA396A281DCBD66A00370153 /* Fuzzy-iOS */,
 				BA396A351DCBD85000370153 /* Fuzzy-tvOS */,
 				BA8A8FB11DCBDA1100C9F545 /* Fuzzy-watchOS */,
+				BAA610081DD8F50500E93F10 /* FuzzyTests-macOS */,
+				BAA610171DD8F51500E93F10 /* FuzzyTests-iOS */,
+				BAA610261DD8F52700E93F10 /* FuzzyTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -441,6 +587,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA8A8FB01DCBDA1100C9F545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA610071DD8F50500E93F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA610161DD8F51500E93F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA610251DD8F52700E93F10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -542,7 +709,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAA610051DD8F50500E93F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA610351DD8F55A00E93F10 /* InfererTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA610141DD8F51500E93F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA610361DD8F55A00E93F10 /* InfererTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAA610231DD8F52700E93F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA610371DD8F55B00E93F10 /* InfererTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAA610101DD8F50500E93F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA396A151DCBC1DD00370153 /* Fuzzy-macOS */;
+			targetProxy = BAA6100F1DD8F50500E93F10 /* PBXContainerItemProxy */;
+		};
+		BAA6101F1DD8F51500E93F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA396A281DCBD66A00370153 /* Fuzzy-iOS */;
+			targetProxy = BAA6101E1DD8F51500E93F10 /* PBXContainerItemProxy */;
+		};
+		BAA6102E1DD8F52700E93F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA396A351DCBD85000370153 /* Fuzzy-tvOS */;
+			targetProxy = BAA6102D1DD8F52700E93F10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BA396A1C1DCBC1DD00370153 /* Debug */ = {
@@ -820,6 +1029,90 @@
 			};
 			name = Release;
 		};
+		BAA610111DD8F50500E93F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/InfoTests-macOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.northernforest.fuzzytests-macos";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BAA610121DD8F50500E93F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/InfoTests-macOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.northernforest.fuzzytests-macos";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BAA610211DD8F51500E93F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Support/InfoTests-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.northernforest.fuzzytests-ios";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		BAA610221DD8F51500E93F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Support/InfoTests-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.northernforest.fuzzytests-ios";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		BAA610301DD8F52700E93F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Support/InfoTests-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.northernforest.fuzzytests-tvos";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Debug;
+		};
+		BAA610311DD8F52700E93F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Support/InfoTests-tvOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.northernforest.fuzzytests-tvos";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -867,6 +1160,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BAA610131DD8F50500E93F10 /* Build configuration list for PBXNativeTarget "FuzzyTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA610111DD8F50500E93F10 /* Debug */,
+				BAA610121DD8F50500E93F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAA610201DD8F51500E93F10 /* Build configuration list for PBXNativeTarget "FuzzyTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA610211DD8F51500E93F10 /* Debug */,
+				BAA610221DD8F51500E93F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAA6102F1DD8F52700E93F10 /* Build configuration list for PBXNativeTarget "FuzzyTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA610301DD8F52700E93F10 /* Debug */,
+				BAA610311DD8F52700E93F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
