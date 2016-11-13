@@ -142,6 +142,7 @@
 		BAA610271DD8F52700E93F10 /* FuzzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA6102B1DD8F52700E93F10 /* InfoTests-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoTests-tvOS.plist"; sourceTree = "<group>"; };
 		BAA610331DD8F55300E93F10 /* InfererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfererTests.swift; path = Tests/InfererTests.swift; sourceTree = "<group>"; };
+		BAA610381DD91FA300E93F10 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzy.swift; sourceTree = "<group>"; };
 		BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+Expressible.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				BA9397A41DD45563009A25FA /* README.md */,
+				BAA610381DD91FA300E93F10 /* CHANGELOG.md */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
