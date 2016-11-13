@@ -124,9 +124,9 @@ public struct RiskInferer {
         // Here come the fuzzy inference rules
 
         let risk: Fuzzification = [
-            Risk.low    : funding[Funding.adequate] || staffing[Staffing.small], // You can use traditional
-            Risk.normal : funding[Funding.marginal] && staffing[Staffing.large], // logical operators
-            Risk.high   : funding[Funding.inadequate]
+            Risk.low    : funding[Funding.adequate] || staffing[Staffing.small], // You can use 
+            Risk.normal : funding[Funding.marginal] && staffing[Staffing.large], // traditional 
+            Risk.high   : funding[Funding.inadequate]                            // logical operators
         ]
 
         // Defuzzify inferred result into crisp output
