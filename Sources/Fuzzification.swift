@@ -6,13 +6,22 @@
 //  Copyright © 2016 Anton Bronnikov. All rights reserved.
 //
 
+/// Result of fuzzifying of some crisp value by a fuzzyfier.
+
 public struct Fuzzification {
 
     var fuzzification: [String: Fuzzy]
 
+    // MARK: - Public API
+
+    /// Creates an empty fuzzyfication.
+
     public init() {
         fuzzification = [:]
     }
+
+    /// Creates a new fuzzyfication with a sequence of `(String, Fuzzy)` tuples that reflect 
+    /// linguistic variables and their respective fuzzy values.
 
     public init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (String, Fuzzy) {
         fuzzification = Dictionary(minimumCapacity: sequence.underestimatedCount)
@@ -24,6 +33,9 @@ public struct Fuzzification {
         }
     }
 
+    /// Creates a new fuzzyfication with a sequence of `(LinguisticVariable, Fuzzy)` of linguistic
+    /// variables and their respective fuzzy values.
+
     public init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (LinguisticVariable, Fuzzy) {
         fuzzification = Dictionary(minimumCapacity: sequence.underestimatedCount)
 
@@ -34,18 +46,24 @@ public struct Fuzzification {
         }
     }
 
-    public subscript(index: String) -> Fuzzy {
+    public subscript(name: String) -> Fuzzy {
         get {
-            return fuzzification[index]!
+            guard let fuzzy = fuzzification[name] else {
+                fatalError("did not find the linguistic variable \(name)")
+            }
+            return fuzzy
         }
         set {
-            fuzzification[index] = newValue
+            fuzzification[name] = newValue
         }
     }
 
     public subscript(linguisticVariable: LinguisticVariable) -> Fuzzy {
         get {
-            return fuzzification[linguisticVariable.name]!
+            guard let fuzzy = fuzzification[linguisticVariable.name] else {
+                fatalError("did not find the linguistic variable \(linguisticVariable.name)")
+            }
+            return fuzzy
         }
         set {
             fuzzification[linguisticVariable.name] = newValue

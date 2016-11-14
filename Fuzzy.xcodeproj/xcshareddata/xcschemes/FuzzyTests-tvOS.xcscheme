@@ -18,7 +18,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BAA610261DD8F52700E93F10"
-               BuildableName = "FuzzyTests-tvOS.xctest"
+               BuildableName = "FuzzyTests.xctest"
                BlueprintName = "FuzzyTests-tvOS"
                ReferencedContainer = "container:Fuzzy.xcodeproj">
             </BuildableReference>
