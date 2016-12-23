@@ -8,6 +8,10 @@
 
 extension Fuzzy {
 
+    public static prefix func ! (rhs: Fuzzy) -> Fuzzy {
+        return Fuzzy(1 - rhs.degreeOfMembership)
+    }
+
     public static func && (lhs: Fuzzy, rhs: Fuzzy) -> Fuzzy {
         return Fuzzy(min(lhs.degreeOfMembership, rhs.degreeOfMembership))
     }
