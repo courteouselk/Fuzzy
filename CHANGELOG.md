@@ -1,4 +1,16 @@
-# 0.0.1
+# Change Log
+
+## Unreleased
+
+### API changes
+
+- `Fuzzy` adopts `Equatable`, `Comparable`, `Hashable` 
+
+### Other
+
+- Added basic unit-tests for `Fuzzy` type
+
+## [0.0.1](https://github.com/courteouselk/Fuzzy/releases/tag/0.0.1)
 
 - Fuzzifier base class
 - Three base functions for linguistic variables (linear Z, S, and triangle)
