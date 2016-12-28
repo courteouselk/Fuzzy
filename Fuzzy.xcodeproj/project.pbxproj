@@ -15,6 +15,9 @@
 		BA1C82781DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C82761DCDDFC5003871A6 /* LinguisticVariable+Operators.swift */; };
 		BA1C82791DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C82761DCDDFC5003871A6 /* LinguisticVariable+Operators.swift */; };
 		BA1C827A1DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C82761DCDDFC5003871A6 /* LinguisticVariable+Operators.swift */; };
+		BA3061B41E13B26600B95580 /* FuzzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3061B31E13B26600B95580 /* FuzzyTests.swift */; };
+		BA3061B51E13B26600B95580 /* FuzzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3061B31E13B26600B95580 /* FuzzyTests.swift */; };
+		BA3061B61E13B26600B95580 /* FuzzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3061B31E13B26600B95580 /* FuzzyTests.swift */; };
 		BA396A1B1DCBC1DD00370153 /* Fuzzy-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BA396A191DCBC1DD00370153 /* Fuzzy-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA396A2D1DCBD66B00370153 /* Fuzzy-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BA396A2B1DCBD66B00370153 /* Fuzzy-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA396A3A1DCBD85000370153 /* Fuzzy-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BA396A381DCBD85000370153 /* Fuzzy-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,14 +34,6 @@
 		BA8A8FD71DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD51DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift */; };
 		BA8A8FD81DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD51DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift */; };
 		BA8A8FD91DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A8FD51DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift */; };
-		BA9397811DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397801DD28FB8009A25FA /* Fuzzy+Reflectable.swift */; };
-		BA9397821DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397801DD28FB8009A25FA /* Fuzzy+Reflectable.swift */; };
-		BA9397831DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397801DD28FB8009A25FA /* Fuzzy+Reflectable.swift */; };
-		BA9397841DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397801DD28FB8009A25FA /* Fuzzy+Reflectable.swift */; };
-		BA9397861DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397851DD30A57009A25FA /* Fuzzy+StringConvertible.swift */; };
-		BA9397871DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397851DD30A57009A25FA /* Fuzzy+StringConvertible.swift */; };
-		BA9397881DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397851DD30A57009A25FA /* Fuzzy+StringConvertible.swift */; };
-		BA9397891DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9397851DD30A57009A25FA /* Fuzzy+StringConvertible.swift */; };
 		BA93978B1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93978A1DD30B4C009A25FA /* Fuzzy+Operators.swift */; };
 		BA93978C1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93978A1DD30B4C009A25FA /* Fuzzy+Operators.swift */; };
 		BA93978D1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93978A1DD30B4C009A25FA /* Fuzzy+Operators.swift */; };
@@ -110,6 +105,7 @@
 /* Begin PBXFileReference section */
 		BA1C82711DCCFF18003871A6 /* Fuzzyfier+MembershipFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzyfier+MembershipFunctions.swift"; sourceTree = "<group>"; };
 		BA1C82761DCDDFC5003871A6 /* LinguisticVariable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinguisticVariable+Operators.swift"; sourceTree = "<group>"; };
+		BA3061B31E13B26600B95580 /* FuzzyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuzzyTests.swift; sourceTree = "<group>"; };
 		BA396A161DCBC1DD00370153 /* Fuzzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fuzzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA396A191DCBC1DD00370153 /* Fuzzy-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fuzzy-macOS.h"; sourceTree = "<group>"; };
 		BA396A1A1DCBC1DD00370153 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
@@ -125,8 +121,6 @@
 		BA8A8FC01DCBDDC500C9F545 /* Fuzzyfier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzyfier.swift; sourceTree = "<group>"; };
 		BA8A8FCA1DCBF38200C9F545 /* LinguisticVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinguisticVariable.swift; sourceTree = "<group>"; };
 		BA8A8FD51DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinguisticVariable+Hedges.swift"; sourceTree = "<group>"; };
-		BA9397801DD28FB8009A25FA /* Fuzzy+Reflectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+Reflectable.swift"; sourceTree = "<group>"; };
-		BA9397851DD30A57009A25FA /* Fuzzy+StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+StringConvertible.swift"; sourceTree = "<group>"; };
 		BA93978A1DD30B4C009A25FA /* Fuzzy+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+Operators.swift"; sourceTree = "<group>"; };
 		BA9397901DD3C459009A25FA /* Fuzzification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzification.swift; sourceTree = "<group>"; };
 		BA9397951DD3C69F009A25FA /* Fuzzification+Expressible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzification+Expressible.swift"; sourceTree = "<group>"; };
@@ -141,7 +135,7 @@
 		BAA6101C1DD8F51500E93F10 /* InfoTests-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoTests-iOS.plist"; sourceTree = "<group>"; };
 		BAA610271DD8F52700E93F10 /* FuzzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA6102B1DD8F52700E93F10 /* InfoTests-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoTests-tvOS.plist"; sourceTree = "<group>"; };
-		BAA610331DD8F55300E93F10 /* InfererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfererTests.swift; path = Tests/InfererTests.swift; sourceTree = "<group>"; };
+		BAA610331DD8F55300E93F10 /* InfererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfererTests.swift; sourceTree = "<group>"; };
 		BAA610381DD91FA300E93F10 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzy.swift; sourceTree = "<group>"; };
 		BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+Expressible.swift"; sourceTree = "<group>"; };
@@ -318,9 +312,10 @@
 		BAA610321DD8F54100E93F10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BA3061B31E13B26600B95580 /* FuzzyTests.swift */,
 				BAA610331DD8F55300E93F10 /* InfererTests.swift */,
 			);
-			name = Tests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		BAD829BD1DCFA7840024710B /* Fuzzy */ = {
@@ -328,8 +323,6 @@
 			children = (
 				BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */,
 				BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */,
-				BA9397801DD28FB8009A25FA /* Fuzzy+Reflectable.swift */,
-				BA9397851DD30A57009A25FA /* Fuzzy+StringConvertible.swift */,
 				BA93978A1DD30B4C009A25FA /* Fuzzy+Operators.swift */,
 			);
 			name = Fuzzy;
@@ -628,9 +621,7 @@
 				BA9397961DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C82771DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A01DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
-				BA9397861DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
 				BA9397A81DD45B46009A25FA /* Discourse.swift in Sources */,
-				BA9397811DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C231DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397911DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978B1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
@@ -651,9 +642,7 @@
 				BA9397971DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C82781DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A11DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
-				BA9397871DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
 				BA9397A91DD45B46009A25FA /* Discourse.swift in Sources */,
-				BA9397821DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C241DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397921DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978C1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
@@ -674,9 +663,7 @@
 				BA9397981DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C82791DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A21DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
-				BA9397881DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
 				BA9397AA1DD45B46009A25FA /* Discourse.swift in Sources */,
-				BA9397831DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C251DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397931DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978D1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
@@ -697,9 +684,7 @@
 				BA9397991DD3C69F009A25FA /* Fuzzification+Expressible.swift in Sources */,
 				BA1C827A1DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A31DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
-				BA9397891DD30A57009A25FA /* Fuzzy+StringConvertible.swift in Sources */,
 				BA9397AB1DD45B46009A25FA /* Discourse.swift in Sources */,
-				BA9397841DD28FB8009A25FA /* Fuzzy+Reflectable.swift in Sources */,
 				BAB51C261DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397941DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978E1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
@@ -715,6 +700,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3061B41E13B26600B95580 /* FuzzyTests.swift in Sources */,
 				BAA610351DD8F55A00E93F10 /* InfererTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3061B51E13B26600B95580 /* FuzzyTests.swift in Sources */,
 				BAA610361DD8F55A00E93F10 /* InfererTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +718,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3061B61E13B26600B95580 /* FuzzyTests.swift in Sources */,
 				BAA610371DD8F55B00E93F10 /* InfererTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

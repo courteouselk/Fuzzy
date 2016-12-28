@@ -6,7 +6,7 @@
 //  Copyright © 2016 Anton Bronnikov. All rights reserved.
 //
 
-extension Fuzzification: Sequence {
+extension Fuzzification : Sequence {
 
     public func makeIterator() -> AnyIterator<(key: String, value: Fuzzy)> {
         return AnyIterator(fuzzification.makeIterator())

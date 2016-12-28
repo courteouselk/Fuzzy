@@ -8,7 +8,7 @@
 
 /// Fuzzy value.
 
-public struct Fuzzy {
+public struct Fuzzy : Equatable, Comparable, Hashable, CustomReflectable, CustomStringConvertible {
 
     public static let `false` = Fuzzy(0)
     public static let `true` = Fuzzy(1)
@@ -20,5 +20,48 @@ public struct Fuzzy {
 
         self.degreeOfMembership = degreeOfMembership
     }
+
+    // MARK: - Equatable
+
+    public static func == (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
+        return lhs.degreeOfMembership == rhs.degreeOfMembership
+    }
+
+    // MARK: - Comparable
+
+    public static func < (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
+        return lhs.degreeOfMembership < rhs.degreeOfMembership
+    }
+
+    public static func > (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
+        return lhs.degreeOfMembership > rhs.degreeOfMembership
+    }
+
+    public static func <= (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
+        return lhs.degreeOfMembership <= rhs.degreeOfMembership
+    }
+
+    public static func >= (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
+        return lhs.degreeOfMembership >= rhs.degreeOfMembership
+    }
+
+    // MARK: - Hashable
+
+    public var hashValue: Int {
+        return degreeOfMembership.hashValue
+    }
+
+    // MARK: - CustomReflectable
+
+    public var customMirror: Mirror {
+        return Mirror(reflecting: degreeOfMembership)
+    }
+
+    // MARK: - CustomStringConvertible
+
+    public var description: String {
+        return degreeOfMembership.description
+    }
+
 
 }

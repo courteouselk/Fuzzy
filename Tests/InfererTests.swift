@@ -15,7 +15,7 @@ class InfererTests: XCTestCase {
         let riskInferer = RiskInferer()
 
         let risk = riskInferer.infer(funding: 25, staffing: 65)
-
+        
         XCTAssert(abs(risk - 67.419354839) < 0.000000001)
     }
 

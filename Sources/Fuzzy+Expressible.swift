@@ -6,15 +6,19 @@
 //  Copyright © 2016 Anton Bronnikov. All rights reserved.
 //
 
-extension Fuzzy: ExpressibleByBooleanLiteral {
+// MARK: ExpressibleByBooleanLiteral
+
+extension Fuzzy : ExpressibleByBooleanLiteral {
 
     public init(booleanLiteral isTrue: BooleanLiteralType) {
-        self = isTrue ? Fuzzy(1) : Fuzzy(0)
+        self = isTrue ? Fuzzy.true : Fuzzy.false
     }
 
 }
 
-extension Fuzzy: ExpressibleByFloatLiteral {
+// MARK: - ExpressibleByFloatLiteral
+
+extension Fuzzy : ExpressibleByFloatLiteral {
 
     public init(floatLiteral value: FloatLiteralType) {
         self.init(value)
