@@ -4,7 +4,8 @@
 
 ### API changes
 
-- `Fuzzy` adopts `Equatable`, `Comparable`, `Hashable` 
+- `Fuzzy` adopts `Equatable`, `Comparable`, `Hashable`.
+- `Fuzzy` has public constructors `init(_: Double)` and `init(numerator: Int, denominator: Int)`
 
 ### Other
 

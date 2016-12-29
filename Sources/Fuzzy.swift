@@ -15,10 +15,14 @@ public struct Fuzzy : Equatable, Comparable, Hashable, CustomReflectable, Custom
 
     let degreeOfMembership: Double
 
-    init(_ degreeOfMembership: Double) {
+    public init(_ degreeOfMembership: Double) {
         assert(degreeOfMembership >= 0 && degreeOfMembership <= 1, "degree of membership must fall into [0..1] range")
 
         self.degreeOfMembership = degreeOfMembership
+    }
+
+    public init(numerator: Int, denominator: Int) {
+        self.init(Double(numerator) / Double(denominator))
     }
 
     // MARK: - Equatable
@@ -63,5 +67,24 @@ public struct Fuzzy : Equatable, Comparable, Hashable, CustomReflectable, Custom
         return degreeOfMembership.description
     }
 
+}
 
+// MARK: - ExpressibleByBooleanLiteral
+
+extension Fuzzy : ExpressibleByBooleanLiteral {
+
+    public init(booleanLiteral isTrue: BooleanLiteralType) {
+        self = isTrue ? Fuzzy.true : Fuzzy.false
+    }
+
+}
+
+// MARK: - ExpressibleByFloatLiteral
+
+extension Fuzzy : ExpressibleByFloatLiteral {
+
+    public init(floatLiteral value: FloatLiteralType) {
+        self.init(value)
+    }
+    
 }

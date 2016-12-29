@@ -72,10 +72,6 @@
 		BAB51C1E1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
 		BAB51C1F1DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
 		BAB51C201DD1B4970071EFFB /* Fuzzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */; };
-		BAB51C231DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */; };
-		BAB51C241DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */; };
-		BAB51C251DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */; };
-		BAB51C261DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,7 +134,6 @@
 		BAA610331DD8F55300E93F10 /* InfererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfererTests.swift; sourceTree = "<group>"; };
 		BAA610381DD91FA300E93F10 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuzzy.swift; sourceTree = "<group>"; };
-		BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fuzzy+Expressible.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,7 +317,6 @@
 			isa = PBXGroup;
 			children = (
 				BAB51C1C1DD1B4970071EFFB /* Fuzzy.swift */,
-				BAB51C221DD1BB7D0071EFFB /* Fuzzy+Expressible.swift */,
 				BA93978A1DD30B4C009A25FA /* Fuzzy+Operators.swift */,
 			);
 			name = Fuzzy;
@@ -622,7 +616,6 @@
 				BA1C82771DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A01DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397A81DD45B46009A25FA /* Discourse.swift in Sources */,
-				BAB51C231DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397911DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978B1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
 				BA8A8FD61DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift in Sources */,
@@ -643,7 +636,6 @@
 				BA1C82781DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A11DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397A91DD45B46009A25FA /* Discourse.swift in Sources */,
-				BAB51C241DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397921DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978C1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
 				BA8A8FD71DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift in Sources */,
@@ -664,7 +656,6 @@
 				BA1C82791DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A21DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397AA1DD45B46009A25FA /* Discourse.swift in Sources */,
-				BAB51C251DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397931DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978D1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
 				BA8A8FD81DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift in Sources */,
@@ -685,7 +676,6 @@
 				BA1C827A1DCDDFC5003871A6 /* LinguisticVariable+Operators.swift in Sources */,
 				BA9397A31DD3CCCF009A25FA /* Fuzzification+StringConvertible.swift in Sources */,
 				BA9397AB1DD45B46009A25FA /* Discourse.swift in Sources */,
-				BAB51C261DD1BB7D0071EFFB /* Fuzzy+Expressible.swift in Sources */,
 				BA9397941DD3C459009A25FA /* Fuzzification.swift in Sources */,
 				BA93978E1DD30B4C009A25FA /* Fuzzy+Operators.swift in Sources */,
 				BA8A8FD91DCC0FA500C9F545 /* LinguisticVariable+Hedges.swift in Sources */,
