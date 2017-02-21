@@ -35,7 +35,7 @@ public struct LinguisticVariable {
     /// - seealso: [Membership function](https://en.wikipedia.org/wiki/Membership_function_(mathematics))
 
     public func fuzzify(_ crisp: Double) -> Fuzzy {
-        return Fuzzy(membershipFunction(crisp))
+        return Fuzzy(truthyness: membershipFunction(crisp))
     }
 
     /// Creates a new linguistic variable using a free-style membership function.

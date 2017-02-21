@@ -8,63 +8,105 @@
 
 /// Fuzzy value.
 
-public struct Fuzzy : Equatable, Comparable, Hashable, CustomReflectable, CustomStringConvertible {
+public struct Fuzzy : Equatable, Comparable, Hashable {
 
-    public static let `false` = Fuzzy(0)
-    public static let `true` = Fuzzy(1)
+    /// Complete falsehood.
 
-    let degreeOfMembership: Double
+    public static let `false` = Fuzzy(crisp: false)
 
-    public init(_ degreeOfMembership: Double) {
-        assert(degreeOfMembership >= 0 && degreeOfMembership <= 1, "degree of membership must fall into [0..1] range")
+    /// Complete truth.
 
-        self.degreeOfMembership = degreeOfMembership
+    public static let `true` = Fuzzy(crisp: true)
+
+    let truthyness: Double
+
+    /// Creates a new fuzzy value.
+    ///
+    /// - parameters:
+    ///   - truthyness: Indicates the degree of truthyness for new fuzzy value, with 0.0 being a 
+    ///                 complete falsehood and 1.0 being a complete truth.
+
+    public init(truthyness: Double) {
+        precondition(truthyness >= 0.0 && truthyness <= 1.0,
+                     "truthyness must fall within the range of [0..1]")
+
+        self.truthyness = truthyness
     }
 
-    public init(numerator: Int, denominator: Int) {
-        self.init(Double(numerator) / Double(denominator))
+    /// Creates a new fuzzy value.
+    ///
+    /// - parameters:
+    ///   - crisp: Crisp `true` or crisp `false` for the new fuzzy value.
+
+    public init(crisp: Bool) {
+        truthyness = crisp ? 1.0 : 0.0
+    }
+
+    /// Creates a new fuzzy value.
+    ///
+    /// `truthynessScore` equal to 0 will create a fuzzy value with complete falsehood measure, 
+    /// while `truthynessScore` equal to `competeTruthScore` will produce a complete truth.
+    ///
+    /// - parameters:
+    ///   - truthynessScore:  Non-negative integer indicating the degree of the truthyness for new
+    ///                       fuzzy value.
+    ///   - competeTruthScore:  Positive integer marking the complete truth score.
+
+    public init(truthynessScore: Int, competeTruthScore: Int) {
+        precondition(competeTruthScore > 0, "competeTruthScore must be positive integer")
+        precondition(truthynessScore >= 0 && truthynessScore <= competeTruthScore, "competeTruthScore must be positive integer")
+
+        self.init(truthyness: Double(truthynessScore) / Double(competeTruthScore))
     }
 
     // MARK: - Equatable
 
     public static func == (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
-        return lhs.degreeOfMembership == rhs.degreeOfMembership
+        return lhs.truthyness == rhs.truthyness
     }
 
     // MARK: - Comparable
 
     public static func < (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
-        return lhs.degreeOfMembership < rhs.degreeOfMembership
+        return lhs.truthyness < rhs.truthyness
     }
 
     public static func > (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
-        return lhs.degreeOfMembership > rhs.degreeOfMembership
+        return lhs.truthyness > rhs.truthyness
     }
 
     public static func <= (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
-        return lhs.degreeOfMembership <= rhs.degreeOfMembership
+        return lhs.truthyness <= rhs.truthyness
     }
 
     public static func >= (lhs: Fuzzy, rhs: Fuzzy) -> Bool {
-        return lhs.degreeOfMembership >= rhs.degreeOfMembership
+        return lhs.truthyness >= rhs.truthyness
     }
 
     // MARK: - Hashable
 
     public var hashValue: Int {
-        return degreeOfMembership.hashValue
+        return truthyness.hashValue
     }
 
-    // MARK: - CustomReflectable
+}
+
+// MARK: - CustomReflectable
+
+extension Fuzzy : CustomReflectable {
 
     public var customMirror: Mirror {
-        return Mirror(reflecting: degreeOfMembership)
+        return Mirror(reflecting: truthyness)
     }
 
-    // MARK: - CustomStringConvertible
+}
+
+// MARK: - CustomStringConvertible
+
+extension Fuzzy : CustomStringConvertible {
 
     public var description: String {
-        return degreeOfMembership.description
+        return truthyness.description
     }
 
 }
@@ -74,7 +116,7 @@ public struct Fuzzy : Equatable, Comparable, Hashable, CustomReflectable, Custom
 extension Fuzzy : ExpressibleByBooleanLiteral {
 
     public init(booleanLiteral isTrue: BooleanLiteralType) {
-        self = isTrue ? Fuzzy.true : Fuzzy.false
+        self.init(crisp: isTrue)
     }
 
 }
@@ -84,7 +126,7 @@ extension Fuzzy : ExpressibleByBooleanLiteral {
 extension Fuzzy : ExpressibleByFloatLiteral {
 
     public init(floatLiteral value: FloatLiteralType) {
-        self.init(value)
+        self.init(truthyness: value)
     }
     
 }

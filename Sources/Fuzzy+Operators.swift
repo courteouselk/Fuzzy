@@ -9,15 +9,15 @@
 extension Fuzzy {
 
     public static prefix func ! (rhs: Fuzzy) -> Fuzzy {
-        return Fuzzy(1 - rhs.degreeOfMembership)
+        return Fuzzy(truthyness: 1 - rhs.truthyness)
     }
 
     public static func && (lhs: Fuzzy, rhs: Fuzzy) -> Fuzzy {
-        return Fuzzy(min(lhs.degreeOfMembership, rhs.degreeOfMembership))
+        return Fuzzy(truthyness: min(lhs.truthyness, rhs.truthyness))
     }
 
     public static func || (lhs: Fuzzy, rhs: Fuzzy) -> Fuzzy {
-        return Fuzzy(max(lhs.degreeOfMembership, rhs.degreeOfMembership))
+        return Fuzzy(truthyness: max(lhs.truthyness, rhs.truthyness))
     }
 
 }

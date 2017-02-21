@@ -15,16 +15,16 @@ class FuzzyTests: XCTestCase {
         let fuzzyTrue = Fuzzy.`true`
         let literalTrue: Fuzzy = true
 
-        XCTAssertEqual(fuzzyTrue.degreeOfMembership, 1.0)
-        XCTAssertEqual(literalTrue.degreeOfMembership, 1.0)
+        XCTAssertEqual(fuzzyTrue.truthyness, 1.0)
+        XCTAssertEqual(literalTrue.truthyness, 1.0)
     }
 
     func testFalse() {
         let fuzzyFalse = Fuzzy.`false`
         let literalFalse: Fuzzy = false
 
-        XCTAssertEqual(fuzzyFalse.degreeOfMembership, 0.0)
-        XCTAssertEqual(literalFalse.degreeOfMembership, 0.0)
+        XCTAssertEqual(fuzzyFalse.truthyness, 0.0)
+        XCTAssertEqual(literalFalse.truthyness, 0.0)
     }
 
     func testEquatable() {
@@ -40,7 +40,7 @@ class FuzzyTests: XCTestCase {
 
         do {
             let fuzzyA: Fuzzy = 0.5
-            let fuzzyB = Fuzzy(0.5)
+            let fuzzyB = Fuzzy(truthyness: 0.5)
 
             XCTAssertEqual(fuzzyA, fuzzyB)
         }

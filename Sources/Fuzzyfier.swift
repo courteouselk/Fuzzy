@@ -77,7 +77,7 @@ open class Fuzzifier {
 
             let aggregatedRulesOutput = clippedConsequentRuleOutputs.reduce(Fuzzy.false, ||)
 
-            return (x, aggregatedRulesOutput.degreeOfMembership)
+            return (x, aggregatedRulesOutput.truthyness)
         }
 
         let fraction = aggregation.reduce((numerator: 0.0, denominator: 0.0)) {
