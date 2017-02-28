@@ -1,11 +1,14 @@
 # Change Log
 
-## Unreleased
+## [0.0.2](https://github.com/courteouselk/Fuzzy/releases/tag/0.0.2)
 
 ### API changes
 
 - `Fuzzy` adopts `Equatable`, `Comparable`, `Hashable`.
-- `Fuzzy` has public constructors `init(_: Double)` and `init(numerator: Int, denominator: Int)`
+- `Fuzzy` has public constructors:
+  - `init(truthyness: Double)`
+  - `init(crisp: Bool)` 
+  - `init(truthynessScore: Int, competeTruthScore: Int)`
 
 ### Other
 

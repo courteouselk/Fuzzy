@@ -91,42 +91,30 @@ public struct Fuzzy : Equatable, Comparable, Hashable {
 
 }
 
-// MARK: - CustomReflectable
+// MARK: - ExpressibleByBooleanLiteral, ExpressibleByFloatLiteral
 
-extension Fuzzy : CustomReflectable {
-
-    public var customMirror: Mirror {
-        return Mirror(reflecting: truthyness)
-    }
-
-}
-
-// MARK: - CustomStringConvertible
-
-extension Fuzzy : CustomStringConvertible {
-
-    public var description: String {
-        return truthyness.description
-    }
-
-}
-
-// MARK: - ExpressibleByBooleanLiteral
-
-extension Fuzzy : ExpressibleByBooleanLiteral {
+extension Fuzzy : ExpressibleByBooleanLiteral, ExpressibleByFloatLiteral {
 
     public init(booleanLiteral isTrue: BooleanLiteralType) {
         self.init(crisp: isTrue)
     }
 
-}
-
-// MARK: - ExpressibleByFloatLiteral
-
-extension Fuzzy : ExpressibleByFloatLiteral {
-
     public init(floatLiteral value: FloatLiteralType) {
         self.init(truthyness: value)
     }
     
+}
+
+// MARK: - CustomReflectable, CustomStringConvertible
+
+extension Fuzzy : CustomReflectable, CustomStringConvertible {
+
+    public var customMirror: Mirror {
+        return Mirror(reflecting: truthyness)
+    }
+
+    public var description: String {
+        return truthyness.description
+    }
+
 }
