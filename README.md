@@ -1,3 +1,4 @@
+[![License](https://img.shields.io/github/license/courteouselk/Fuzzy.svg?maxAge=2592000)](https://raw.githubusercontent.com/courteouselk/Fuzzy/master/LICENSE)
 [![Swift 3.0](https://img.shields.io/badge/Swift-3.0-E9392C.svg?style=flat)](https://developer.apple.com/swift/)
 
 # Fuzzy
